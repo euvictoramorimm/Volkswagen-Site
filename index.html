@@ -1,38 +1,49 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Volkswagen</title>
-    <style>
-  * {
-    border: 1px solid red;
-  }
-</style>
+    <title>VW Motors | Volksnight 27</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <a href="index.html">
-            <img src="Imagens/Volkswagen_logo_2019.png" alt="Logo Volkswagen">
-        </a>
+        <div class="logo">VW Motors</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#veiculos">Veículos</a></li>
+                <li><a href="#ofertas">Ofertas</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <section>
-            <img src="Imagens/Volksnight27.png" alt="Foto Volksnight 27">
-            <h1>A noite é uma criança: Volksnight 27</h1>
-            <p>Motor e tecnologia para você curtir a noite.</p>
-            <button>Agende seu test drive AGORA</button>  
-        </section>
-            
-        <section>
-            <h2>Explore usando a linha Volkswagen</h2>
-        </section>
-        
-    </main>
-    <footer>
 
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Sinta a emoção de dirigir um Volkswagen</h1>
+                <p>Design, tecnologia e performance em cada detalhe.</p>
+                <a href="#contato" class="btn-cta">Agendar Test Drive</a>
+            </div>
+        </section>
+
+        <section id="veiculos" class="showcase">
+            <h2>Vitrine de Veículos</h2>
+            
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Buscar por modelo (ex: Polo, Nivus)...">
+            </div>
+
+            <div id="car-grid" class="grid-container">
+                </div>
+        </section>
+    </main>
+
+    <footer id="contato">
+        <p>&copy; 2026 VW Motors. Todos os direitos reservados.</p>
     </footer>
-    
+
+    <script src="script.js"></script>
 </body>
 </html>
