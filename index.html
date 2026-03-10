@@ -3,46 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VW Motors | Volksnight 27</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Rodrigues VW | A sua concessionária</title>
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-    <header>
-        <div class="logo">VW Motors</div>
+    <header class="navbar">
+        <div class="logo">
+            <a href="#home">
+                <img src="logo.png" alt="Rodrigues VW - Logo da Concessionária" class="logo-img">
+            </a>
+        </div>
         <nav>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#veiculos">Veículos</a></li>
-                <li><a href="#ofertas">Ofertas</a></li>
+                <li><a href="#servicos">Serviços</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
+        <button class="btn-primary" id="btn-login">Área do Cliente</button>
+        
     </header>
 
     <main>
         <section id="home" class="hero">
             <div class="hero-content">
-                <h1>Sinta a emoção de dirigir um Volkswagen</h1>
-                <p>Design, tecnologia e performance em cada detalhe.</p>
-                <a href="#contato" class="btn-cta">Agendar Test Drive</a>
+                <h1>Pronto para o seu próximo destino.</h1>
+                <p>Encontre o Volkswagen perfeito para o seu dia a dia, com tecnologia, conforto e segurança.</p>
+                <button class="btn-primary" id="btn-test-drive">Agendar Test Drive</button>
             </div>
         </section>
 
         <section id="veiculos" class="showcase">
-            <h2>Vitrine de Veículos</h2>
-            
-            <div class="search-container">
-                <input type="text" id="searchInput" placeholder="Buscar por modelo (ex: Polo, Nivus)...">
+            <h2 class="section-title">Nossa Linha Completa</h2>
+
+            <h3 class="category-title">SUVs</h3>
+            <div class="car-grid" style="margin-bottom: 3rem;">
+                
+                <div class="car-card">
+                    <img src="nivus_highline.png" alt="VW Nivus Highline" class="car-img">
+                    <div class="car-info">
+                        <h4>Nivus Highline</h4>
+                        <p class="car-price">A partir de R$ 147.890</p>
+                        <ul class="car-specs">
+                            <li>Motor: 200 TSI (128 cv)</li>
+                            <li>Câmbio: Automático 6 marchas</li>
+                            <li>Porta-malas: 415 Litros</li>
+                        </ul>
+                        <button class="btn-secondary">Ver Detalhes</button>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <img src="t-cross.png" alt="VW T-Cross" class="car-img">
+                    <div class="car-info">
+                        <h4>T-Cross Highline</h4>
+                        <p class="car-price">A partir de R$ 175.990</p>
+                        <ul class="car-specs">
+                            <li>Motor: 250 TSI (150 cv)</li>
+                            <li>Câmbio: Automático 6 marchas</li>
+                            <li>Teto Solar Panorâmico</li>
+                        </ul>
+                        <button class="btn-secondary">Ver Detalhes</button>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <img src="taos_highline.png" alt="VW Taos Highline" class="car-img">
+                    <div class="car-info">
+                        <h4>Taos Highline</h4>
+                        <p class="car-price">A partir de R$ 212.990</p>
+                        <ul class="car-specs">
+                            <li>Motor: 250 TSI (150 cv)</li>
+                            <li>Porta-malas: 498 Litros</li>
+                            <li>Faróis IQ.Light Matrix</li>
+                        </ul>
+                        <button class="btn-secondary">Ver Detalhes</button>
+                    </div>
+                </div>
             </div>
 
-            <div id="car-grid" class="grid-container">
+            <h3 class="category-title">Hatches</h3>
+            <div class="car-grid" style="margin-bottom: 3rem;">
+                <div class="car-card">
+                    <img src="polo_track.png" alt="VW Polo Track" class="car-img">
+                    <div class="car-info">
+                        <h4>Polo Track</h4>
+                        <p class="car-price">A partir de R$ 87.990</p>
+                        <ul class="car-specs">
+                            <li>Motor: 1.0 MPI (84 cv)</li>
+                            <li>Câmbio: Manual 5 marchas</li>
+                            <li>4 Airbags de série</li>
+                        </ul>
+                        <button class="btn-secondary">Ver Detalhes</button>
+                    </div>
                 </div>
+
+                <div class="car-card">
+                    <img src="polo_gts.png" alt="VW Polo GTS" class="car-img">
+                    <div class="car-info">
+                        <h4>Polo GTS</h4>
+                        <p class="car-price">A partir de R$ 153.790</p>
+                        <ul class="car-specs">
+                            <li>Motor: 250 TSI (150 cv)</li>
+                            <li>Bancos Esportivos</li>
+                            <li>Faróis Full LED Matrix</li>
+                        </ul>
+                        <button class="btn-secondary">Ver Detalhes</button>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="category-title">Sedans</h3>
+            <div class="car-grid">
+                <div class="car-card">
+                    <img src="virtus-comfortline.png" alt="VW Virtus Comfortline" class="car-img">
+                    <div class="car-info">
+                        <h4>Virtus Comfortline</h4>
+                        <p class="car-price">A partir de R$ 128.990</p>
+                        <ul class="car-specs">
+                            <li>Motor: 200 TSI (128 cv)</li>
+                            <li>Porta-malas: 521 Litros</li>
+                            <li>Painel Digital 8"</li>
+                        </ul>
+                        <button class="btn-secondary">Ver Detalhes</button>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <img src="Jetta_gli.png" alt="VW Jetta GLI" class="car-img">
+                    <div class="car-info">
+                        <h4>Jetta GLI</h4>  
+                        <p class="car-price">A partir de R$ 239.390</p>
+                        <ul class="car-specs">
+                            <li>Motor: 350 TSI (231 cv)</li>
+                            <li>Câmbio: DSG 7 marchas</li>
+                            <li>Aceleração: 0-100 km/h em 6,7s</li>
+                        </ul>
+                        <button class="btn-secondary">Ver Detalhes</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicos" class="services-section">
+            <h2 class="section-title">Nossos Serviços</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h4>Revisão Programada</h4>
+                    <p>Mantenha a garantia do seu veículo em dia com peças originais e técnicos especializados.</p>
+                    <button class="btn-secondary">Agendar Revisão</button>
+                </div>
+                <div class="service-card">
+                    <h4>Volksnight 27</h4>
+                    <p>Condições exclusivas de negociação em nosso evento especial noturno de vendas. Traga seu usado!</p>
+                    <button class="btn-secondary">Saber Mais</button>
+                </div>
+                <div class="service-card">
+                    <h4>Peças e Acessórios</h4>
+                    <p>Personalize seu VW com nossa linha completa de acessórios originais de fábrica.</p>
+                    <button class="btn-secondary">Ver Catálogo</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="contact-section">
+            <h2 class="section-title">Fale Conosco</h2>
+            <div class="contact-container">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" required placeholder="Digite seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" required placeholder="Digite seu e-mail">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" rows="4" required placeholder="Como podemos ajudar?"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Enviar Mensagem</button>
+                </form>
+            </div>
         </section>
     </main>
 
-    <footer id="contato">
-        <p>&copy; 2026 VW Motors. Todos os direitos reservados.</p>
-    </footer>
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Área do Cliente</h2>
+            <p>Acesse seu painel para ver histórico de revisões e boletos.</p>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="cpf">CPF</label>
+                    <input type="text" id="cpf" required placeholder="000.000.000-00">
+                </div>
+                <div class="form-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" required placeholder="Sua senha">
+                </div>
+                <button type="submit" class="btn-primary" style="width: 100%;">Entrar</button>
+            </form>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
