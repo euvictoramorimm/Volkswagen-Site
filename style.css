@@ -101,3 +101,97 @@ body { background-color: var(--light-bg); color: var(--text-main); line-height: 
 .logo h2 {
     display: none; 
 }
+
+/* --- Responsividade (Smartphones e Tablets) --- */
+
+/* Estilos do Botão Hambúrguer */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    z-index: 1001;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--vw-dark-blue);
+    transition: all var(--transition-speed);
+}
+
+.mobile-only-btn {
+    display: none;
+}
+
+/* Media Query para telas menores que 768px */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex; /* Mostra o menu hambúrguer */
+    }
+
+    #btn-login {
+        display: none; /* Esconde o botão do header tradicional */
+    }
+
+    /* Transforma a Navbar em um menu vertical oculto */
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px; /* Logo abaixo do header */
+        left: -100%; /* Escondido para fora da tela */
+        width: 100%;
+        background-color: var(--light-bg);
+        box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+        padding: 2rem 0;
+        text-align: center;
+        transition: left var(--transition-speed) ease-in-out;
+    }
+
+    .nav-links.active {
+        left: 0; /* Desliza o menu para a tela */
+    }
+
+    .nav-links li {
+        margin: 1rem 0;
+    }
+    
+    .mobile-only-btn {
+        display: block; /* Mostra o botão de login dentro do menu lateral */
+        margin-top: 1rem;
+    }
+
+    /* Reduzindo o tamanho das fontes e espaçamentos no mobile */
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .showcase, .services-section, .contact-section {
+        padding: 3rem 5%;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .category-title {
+        font-size: 1.5rem;
+    }
+
+    /* Garante que os carros fiquem em 1 coluna e ocupem toda a tela */
+    .car-grid, .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Ajuste do Modal de Login para não vazar a tela */
+    .modal-content {
+        width: 90%;
+        margin: 25% auto;
+        padding: 1.5rem;
+    }
+}
