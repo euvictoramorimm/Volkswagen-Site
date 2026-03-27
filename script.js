@@ -1,3 +1,20 @@
+// 1. As chaves que você copiou daquela tela do console
+const firebaseConfig = {
+  apiKey: "AIzaSyAg2mR-Z-O_PCAEjPq2Gcypv7WQ5PmQosI",
+  authDomain: "meu-projeto-382dd.firebaseapp.com",
+  projectId: "meu-projeto-382dd",
+  storageBucket: "meu-projeto-382dd.appspot.com",
+  messagingSenderId: "398603355526",
+  appId: "1:398603355526:web:15ffb67710c4dd05e7d807",
+  measurementId: "G-SE90BCLYXB"
+};
+
+// 2. A inicialização correta para o nosso código
+firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
+
+// ... a partir daqui vem o resto do seu código (document.addEventListener, etc.)
+
 document.addEventListener('DOMContentLoaded', () => {
     
     // Smooth Scrolling da Navbar
