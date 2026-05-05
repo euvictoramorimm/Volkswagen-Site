@@ -1,2 +1,2 @@
-# volkswagen_site
-Site criado para aula de html, css e JS.
+# Site da Volkswagen
+Site baseado em uma concessionária com HTML, CSS e JS para prática.
